@@ -1,0 +1,39 @@
+{
+  "reservations": [
+  {
+  "id": 1,
+  "name": "Christie",
+  "date": "12/29",
+  "time": "7:00",
+  "number": 12
+  },
+  {
+  "id": 2,
+  "name": "Tony",
+  "date": "4/18",
+  "time": "7:30",
+  "number": 4
+  },
+  {
+  "id": 3,
+  "name": "Joey",
+  "date": "5/16",
+  "time": "3:00",
+  "number": 6
+  },
+  {
+  "id": 4,
+  "name": "Colby",
+  "date": "1/16",
+  "time": "5:00",
+  "number": 3
+  },
+  {
+  "id": 5,
+  "name": "Sally",
+  "date": "1/11",
+  "time": "5:20",
+  "number": 2
+  }
+]
+}

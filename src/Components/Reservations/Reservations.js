@@ -16,7 +16,7 @@ function Reservations(props) {
   });
 
   return (
-    <div className='reservations-container'>
+    <div className='all-cards'>
       <h1>{allReservations}</h1>
     </div>
   );
