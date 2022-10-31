@@ -8,14 +8,39 @@ class Form extends Component {
       date: "",
       time: "",
       number: "",
+      error: ""
     };
   }
-  submitReservation = event => {
-    event.preventDefault();
-    const newReservation = {
 
-    }
+  handleChange = (event) => {
+    const{ name, value } = event.target;
+    this.setState({
+        [name] : value
+    })
   }
+
+  submitReservation = (event) => {
+    event.preventDefault();
+
+    if(!this.state.name || !this.state.date || !this.state.time || !this.state.number) {    
+        return this.setState({error: "Please make sure all fields have been entered to make reservation"})
+    }
+    const newReservation = {
+        id: Date.now(), 
+        ...this.state
+    }
+    this.props.addReservation(newReservation);
+    this.clearForm();
+  }
+  clearForm =() => {
+    this.setState({
+        name: '',
+        date:'',
+        time: "",
+        number:""
+    })
+  }
+
   render() {
     return (
       <form>
