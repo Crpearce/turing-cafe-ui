@@ -3,11 +3,11 @@ import "./Card.css";
 
 function Card({id, name, date, time, number }) {
     return ( 
-        <div className='card'>
-            <h2>{name}</h2>
-            <h3>{date}</h3>
-            <h3>{time}</h3>
-            <h3>{number}</h3>
+        <div className='card-wrapper'>
+            <h2 className='name'>{name}</h2>
+            <h3 className='date'>{date}</h3>
+            <h3 className='time'>{time}</h3>
+            <h3 className='number'>{number}</h3>
             <button> Cancel </button>
         </div>
      );

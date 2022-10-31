@@ -1,11 +1,12 @@
-.card {
+.card-wrapper {
     display: flex;
     align-items: center;
     flex-direction: column;
-    /* contain: content; */
+    color:#007E7F;
     background-color: #FFFFFF;
-    border: 4px solid #007E7F;
+    border: 3px solid #007E7F;
     border-radius: 2%;
-    width: 15em;
     height: 15em;
+    width: 15em;
+    margin: 1em;
   }

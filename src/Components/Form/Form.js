@@ -34,10 +34,10 @@ class Form extends Component {
   }
   clearForm =() => {
     this.setState({
-        name: '',
-        date:'',
+        name: "",
+        date: "",
         time: "",
-        number:""
+        number: ""
     })
   }
 
